@@ -1,0 +1,9 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.slide-container{
+    margin: 10px;
+}
+.slide-container img{
+    height: 450px;
+    width: 100%;
+}

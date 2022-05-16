@@ -1,0 +1,13 @@
+.b-content{
+    width: 100%;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 625px) {
+    .container {
+        width: 100%
+    }
+}

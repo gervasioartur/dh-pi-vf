@@ -1,0 +1,72 @@
+.content {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-color: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 4px 5px 10px 0px rgb(0 0 0 / 25%);
+    padding: 50px 0;
+}
+
+.auth-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.auth-form input[type='text'],
+.auth-form input[type='email'],
+.auth-form input[type='password'],
+.auth-form input[type='file'],
+.user-data input[type='number'] {
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.auth-content input:hover {
+    transform: scale(1.1);
+}
+
+.auth-content input::placeholder {
+    padding: 0 7px;
+}
+
+.auth-content input[type='submit'] {
+    margin-top: 8px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: rgb(84, 172, 84);
+    transition: .5s;
+}
+
+.auth-content input[type='submit']:hover {
+    background-color: green;
+}
+
+.auth-footer {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-footer a {
+    text-decoration: none;
+    font-size: 14px;
+}

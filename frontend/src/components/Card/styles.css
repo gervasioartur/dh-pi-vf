@@ -1,0 +1,41 @@
+.card {
+    flex: 1 0 250px;
+    box-shadow: 0 1px 1rem -4px #000;
+    background: #eee;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 1rem -4px #000;
+    transform: translateY(-3px);
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    object-fit: center;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.anchor{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.anchor:hover{
+    color: #000;
+}
+
+@media screen and (max-width: 625px) {
+    .card {
+        margin: .5rem;
+    }
+}

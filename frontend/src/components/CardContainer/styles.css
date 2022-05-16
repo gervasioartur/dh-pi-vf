@@ -1,0 +1,34 @@
+.cards-container {
+    display: flex;
+    border-radius: 6px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 4px 5px 10px 0px rgb(0 0 0 / 25%) inset;
+    overflow-x: auto;
+    position: relative;
+}
+
+.cards-container::-webkit-scrollbar {
+    height: 8px;
+    width: 10px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #1D428A;
+    border-radius: 10px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+@media screen and (max-width: 625px) {
+    .cards-container {
+        padding: .5rem;
+    }
+}
