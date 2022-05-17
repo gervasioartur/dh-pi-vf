@@ -45,9 +45,15 @@ function ProductDetails(props) {
         } catch (error) {
             msgType = 'error'
             msgText = error.response.data.message
+            console.log(error.response.data)
         }
 
+        if (msgType != 'error') {
+            setFlashMessage(msgText, msgType)
+            history.push('/cart')
+        }
         setFlashMessage(msgText, msgType)
+
     }
 
 

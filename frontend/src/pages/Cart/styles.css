@@ -10,13 +10,24 @@
 .cart-itens {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: lightgrey;
 
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 8px;
 
+    display: flex;
+    flex-direction: column;
+
 }
+
+.nothing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .cart-itens::-webkit-scrollbar {

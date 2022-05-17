@@ -12,6 +12,7 @@ app.use(cors());
 const authRoutes = require('./routes/auth.routes');
 const productsRoues = require('./routes/product.routes')
 const categoriesRoutes = require('./routes/category.routes')
+const cartRoutes =  require('./routes/cart.routes')
 
 // configuring roures
 app.get('/', (req, res) => {
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 app.use("/products", productsRoues)
 app.use('/categories', categoriesRoutes)
+app.use('/carts', cartRoutes)
 
 app.get('*', (req, res) => {
   return res.status(404).json({ message: 'Página não encontrada!' });
